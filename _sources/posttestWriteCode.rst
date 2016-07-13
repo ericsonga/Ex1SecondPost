@@ -53,7 +53,7 @@ The data segment starting at marker 2 and ending at marker 12 has values ranging
 120 meters. Because the difference between 120 and 50 is greater than 10, this trail segment is not considered level.
 
 .. figure:: Figures/dataSeg.png
-    :width: 600px
+    :width: 500px
     :align: center
     :figclass: align-center
 
@@ -109,4 +109,4 @@ Click on the |start| button below when you are ready to try to finish writing th
 		   
       myTests().main()
    
-You have finished the materials. Thank you for taking the time to answer the questions.  You will return in a week to take another post-test.
+You have finished the materials!  Thank you for taking the time to answer the questions. 

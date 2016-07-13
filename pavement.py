@@ -19,19 +19,19 @@ if master_url is None:
         master_url = 'http://127.0.0.1:8000'
         
 master_app = 'runestone'
-serving_dir = "./build/Ex1Post"
+serving_dir = "./build/Ex1SecondPost"
 dest = '../../static'
 
 options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="./build/Ex1Post",
+        builddir="./build/Ex1SecondPost",
         sourcedir="_sources",
-        outdir="./build/Ex1Post",
+        outdir="./build/Ex1SecondPost",
         confdir=".",
-        project_name = "Ex1Post",
-        template_args={'course_id': 'Ex1Post',
+        project_name = "Ex1SecondPost",
+        template_args={'course_id': 'Ex1SecondPost',
                        'login_required':'true',
                        'appname':master_app,
                        'loglevel': 10,

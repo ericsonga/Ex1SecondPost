@@ -1,5 +1,5 @@
 .. qnum::
-   :prefix: 2-3-
+   :prefix: 1-3-
    :start: 1
    
 .. |checkme| image:: Figures/checkMe.png
@@ -22,55 +22,55 @@
     :align: top
     :alt: right arrow for next page
    
-Post-test Order Code Problem (Mixed Up Code)
-----------------------------------------------
+Post-test 2 Order Code Problem (Mixed Up Code)
+--------------------------------------------------
 
-Construct the function ``getAverageInRange(numList,start,end)`` that takes a list of numbers, numList, and returns the average of the numbers between the start and end indices (inclusive). To do this first create a variable sum and set its initial value to 0.  Then loop from the start index to the end index (inclusive) and get the current value at the index and add it to the sum.  Check if the difference between the end index and the start index is greater than or equal to 1 and if so return the sum divided by the difference and otherwise return 0 (to prevent a divide by 0).  
+Construct the function ``getAverage(nums,first,last)`` that takes a list of numbers, nums, and returns the average of the numbers between the first and last indices (inclusive). To do this first create a variable total and set its initial value to 0.  Then loop from the first index to the last index (inclusive) and get the current value at the index and add it to the total.  Check if the difference between the last index and the first index is greater than or equal to 1 and if so return the total divided by the difference and otherwise return 0 (to prevent a divide by 0).  
 
 Examples
 =========
    
-For example ``avgValuesInRange([10,20,30],0,0)`` should return 10 and ``avgValuesInRange([10,20,30],1,3)`` should return 25.
+For example ``getAverage([10,20,30],0,0)`` should return 10 and ``getAverage([10,20,30],1,3)`` should return 25.
     
 Order Code Here
 ================
 
 Click on the |start| button below when you are ready to try to order this code.  You will have up to 10 minutes to try to solve it.  Click on the |finish| button when you have solved this problem or wish to move on without solving it.
 
-.. timed:: post_test_avg_values_in_range
+.. timed:: post_test2_avg_values_in_range
    :timelimit: 10
    :noresult:
    :nofeedback:
    :fullwidth:
    
-   .. parsonsprob:: Post_Test_Avg_Values_In_Range
+   .. parsonsprob:: Post_Test2_Avg_Values_In_Range
       :order: 11,1,2,4,3,0,7,8,9,10,12,5,6
    
       The code below is mixed up and contains extra blocks that are not needed.  Drag the needed code from the left to the right and put them in order with the correct indention so that the code would work correctly.  
       -----
-      def avgValuesInRange(numList, start, end):
+      def getAverage(nums, first, last):
       =====
-          sum = 0
+          total = 0
       =====
-          sum = 1 #paired
+          total = 1 #paired
       =====
-          for index in range(start,end+1):
+          for index in range(first,last+1):
       ===== 
-          for index in range(start,end): #paired
+          for index in range(first,last): #paired
       =====
-              value = numList[index]
+              current = nums[index]
       =====
-              value = index #paired
+              current = index #paired
       =====
-              sum = sum + value
+              total = total + current
       =====
-              sum = sum + index #paired
+              total = total + index #paired
       =====  
-          if (end - start + 1) >= 1:
+          if (last - first + 1) >= 1:
       =====
-          if (end - start) >= 1: #paired
+          if (last - first) >= 1: #paired
       =====
-              return sum / (end - start + 1)
+              return total / (last - first + 1)
       =====
           return 0
 

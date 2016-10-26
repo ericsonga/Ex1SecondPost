@@ -35,7 +35,7 @@ Please answer the following multiple-choice questions to the best of your abilit
 Click on the |start| button below when you are ready to answer the questions.  Click on the |finish| button when you have answered all the questions that you can answer.   
 
 .. timed:: posttest2_mc_timed
-   :timelimit: 10
+   :timelimit: 15
    :noresult:
    :nofeedback:
        
@@ -59,9 +59,9 @@ Click on the |start| button below when you are ready to answer the questions.  C
            def function1(nums, first, last):
                temp = nums[first]
                for index in range(first,last+1):
-                  value = nums[index]
-                  if value < temp:
-                      temp = value
+                  current = nums[index]
+                  if current < temp:
+                      temp = current
                return temp
 
    .. mchoice:: post2-2
@@ -92,31 +92,8 @@ Click on the |start| button below when you are ready to answer the questions.  C
                if count > len:
                    len = count
                return len
-               
-   .. mchoice:: post2-3
-      :answer_a: 24
-      :answer_b: 160
-      :answer_c: 136
-      :answer_d: 159
-      :answer_e: 160
-      :correct: c
-      :feedback_a: This would be true if it added up every other starting with index 0.
-      :feedback_b: This would be true if it added up all the values
-      :feedback_c: This adds up every other starting at index 1
-      :feedback_d: This would be true if it added up all the values except the one at index 0.
-      :feedback_e: This is a repeat of answer b - and a mistake 
-
-      Given the following code segment, what will be printed when this code is executed (run)?
-       
-      ::
-
-          total = 0 # Start out with nothing
-          nums = [1,2,3,4,20,130]
-          for index in range(1,len(nums),2):
-              total = total + nums[index]
-          print(total)
           
-   .. mchoice:: post2-4
+   .. mchoice:: post2-3
       :answer_a: 0
       :answer_b: 1
       :answer_c: 2
@@ -140,10 +117,10 @@ Click on the |start| button below when you are ready to answer the questions.  C
                       total = total + 1
               return total
           
-   .. mchoice:: post2-5
+   .. mchoice:: post2-4
       :answer_a: x = 8 and y = 0
       :answer_b: x = 9 and y = -1
-      :answer_c: x = 1 and y = 8
+      :answer_c: x = 2 and y = 6
       :answer_d: x = 5 and y = 3
       :answer_e: x = 3 and y = 5
       :correct: e
@@ -160,11 +137,11 @@ Click on the |start| button below when you are ready to answer the questions.  C
           y = 1
           z = 0
           for i in range(1,4):
-              z = x;
-              x = i + y;
-              y = z - i;
+              z = x
+              x = i + y
+              y = z - i
               
-   .. mchoice:: post2-6
+   .. mchoice:: post2-5
       :answer_a: 25.0
       :answer_b: 40.0
       :answer_c: 45.0
@@ -173,7 +150,7 @@ Click on the |start| button below when you are ready to answer the questions.  C
       :correct: d
       :feedback_a: This would be true if start was 0 and end was 1.
       :feedback_b: This would be true if start was 2 and end was 2.
-      :feedback_c: This would be true if start was 0 and end was 3.  
+      :feedback_c: This would be true if start was 0 and end was 2.  
       :feedback_d: This is 30 + 40 = 70 / 2 = 35.0.
       :feedback_e: This would be true if end was less than start.  
 

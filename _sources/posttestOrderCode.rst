@@ -25,7 +25,7 @@
 Post-test 2 Order Code Problem (Mixed Up Code)
 --------------------------------------------------
 
-Construct the function ``getAverage(nums,first,last)`` that takes a list of numbers, nums, and returns the average of the numbers between the first and last indices (inclusive). To do this first create a variable total and set its initial value to 0.  Then loop from the first index to the last index (inclusive) and get the current value at the index and add it to the total.  Check if the difference between the last index and the first index is greater than or equal to 1 and if so return the total divided by the difference and otherwise return 0 (to prevent a divide by 0).  
+Construct the function ``getAverage(nums,first,last)`` that takes a list of numbers, nums, and returns the average of the numbers between the first and last indices (inclusive). To do this first create a variable total and set its initial value to 0.  Then loop from the first index to the last index (inclusive) and get the current value at the index and add it to the total.  Check if the last index minus the first index plus one is greater than or equal to 1 and if so return the total divided by the last index minus the first index plus one.  Otherwise return 0 (to prevent a divide by 0).  
 
 Examples
 =========
@@ -48,30 +48,43 @@ Click on the |start| button below when you are ready to try to order this code. 
    
       The code below is mixed up and contains extra blocks that are not needed.  Drag the needed code from the left to the right and put them in order with the correct indention so that the code would work correctly.  
       -----
+      # define function
       def getAverage(nums, first, last):
       =====
+          # init total
           total = 0
       =====
+          # init total
           total = 1 #paired
       =====
+          # loop from first to last (inclusive)
           for index in range(first,last+1):
       ===== 
+          # loop from first to last (inclusive)
           for index in range(first,last): #paired
       =====
+              # get current at index
               current = nums[index]
       =====
+              # get current at index
               current = index #paired
       =====
+              # add current to total
               total = total + current
       =====
+              # add current to total
               total = total + index #paired
       =====  
+          # if at least one value
           if (last - first + 1) >= 1:
       =====
+          # if at least one value
           if (last - first) >= 1: #paired
       =====
+              # return average
               return total / (last - first + 1)
       =====
+          # otherwise return 0
           return 0
 
 When you are finished with this problem, or are ready to move on, click the |finish| button and then go to the next page by clicking the right arrow |right| near the bottom right of this page.    

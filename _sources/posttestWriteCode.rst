@@ -74,7 +74,7 @@ Write Code Here
     
 Finish writing the ``isStableSeg(numList,first,last)`` function below so that the code compiles and all tests print |pass| when you click the |runbutton| button.
 
-Click on the |start| button below when you are ready to try to finish writing this code.  You will have up to 10 minutes to try to write it.  Click on the |finish| button when you have solved this problem or wish to move on without solving it.
+Click on the |start| button below when you are ready to try to finish writing this code.  You will have up to 10 minutes to try to write it.  Click on the |runbutton| button to run and test the code.  Click on the |finish| button when you have solved this problem or wish to move on without solving it.
        
 .. timed:: post_test2_is_level_timed
    :timelimit: 10

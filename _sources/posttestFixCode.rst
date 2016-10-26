@@ -53,7 +53,7 @@ Fix Code Here
 
 Fix the errors so that the hidden tests all print |pass| when you click the |runbutton| button. The error messages and test results are displayed below the code. 
                
-Click on the |start| button below when you are ready to try to fix this code.  You will have up to 10 minutes to try to solve it.  Click on the |finish| button when you have solved this problem or wish to move on without solving it.
+Click on the |start| button below when you are ready to try to fix this code.  You will have up to 10 minutes to try to solve it.  Click on the |runbutton| button to run and test the code.  Click on the |finish| button when you have solved this problem or wish to move on without solving it.
 
 .. timed:: post_test2_snowfall_fix_timed
    :timelimit: 10
@@ -70,20 +70,23 @@ Click on the |start| button below when you are ready to try to fix this code.  Y
           num = 0
           
           # loop through the values in the list
-          for value in Snow
+          for index in range(snow):
+          
+              # get the value at the index
+              val = snow[index]
 		   
               # if the value is not negative
-              if value >= 0:
+              if val >= 0:
    
               # add the value to the sum and increment the num
-              sum = sum + value
+              sum = sum + index
               num = num + 1
   
           # if num is greater than 0
-          if num >= 0:
+          if num > 0:
 
               # calculate and print the average
-              return sum / num
+              return sum 
   
           # otherwise return 0
           return 0
